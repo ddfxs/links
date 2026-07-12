@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人链接 | My Linktree</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* 背景渐变效果 */
+        body {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* 容器样式 */
+        .container {
+            width: 100%;
+            max-width: 580px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+
+        /* 头像样式 */
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+
+        /* 名字和简介 */
+        .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1e1e1e;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        /* 链接列表 */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* 链接按钮基础样式与动画 */
+        .link-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background-color: #fff;
+            color: #1e1e1e;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.25s ease-transform, background-color 0.25s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,255,255,0.8);
+        }
+
+        /* 鼠标悬停/点击效果 */
+        .link-btn:hover {
+            background-color: #1e1e1e;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .link-btn:active {
+            transform: translateY(0);
+        }
+
+        /* 页脚微调 */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 个人信息区 -->
+        <!-- 可以把 src 换成你自己的头像图片链接 -->
+        <img src="avatar.jpg" alt="Avatar" class="profile-img">
+        <h1 class="name">@刘子阳</h1>
+        <p class="bio">✨ 来自jsez。<br>欢迎关注我的社交媒体！</p>
+
+        <!-- 链接聚合区 -->
+        <div class="links-wrapper">
+            <!-- 替换 href 后的网址为你自己的链接 -->
+            <a href="ddfxs.GitHub.io" target="_blank" class="link-btn">🌐 个人博客 / 官方网站</a>
+            <a href="https://github.com" target="_blank" class="link-btn">💻 GitHub 开源项目</a>
+            <a href="https://instagram.com" target="_blank" class="link-btn">📸 Instagram 生活日常</a>
+            <a href="https://youtube.com" target="_blank" class="link-btn">📺 YouTube 视频频道</a>
+            <a href="mailto:your@email.com" class="link-btn">✉️ 联系我 / 商务合作</a>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            © 2026 Powered by My Linktree
+        </div>
+    </div>
+
+</body>
+</html>
